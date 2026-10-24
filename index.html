@@ -1,46 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vegxa Gaming</title>
-<meta name="description" content="Vegxa Gaming makes mobile games. Electrify: Power the City – connect 30 real cities to power.">
-<style>
-  :root { --bg: #0a0f15; --panel: #141b24; --text: #f6f3ec; --muted: #b9b4aa; --accent: #ffd23f; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 56px 16px 64px; }
-  .brand { font-weight: 800; letter-spacing: .12em; color: var(--muted); font-size: .85rem; }
-  h1 { font-size: 2.4rem; margin: 8px 0 4px; letter-spacing: .02em; }
-  h1 span { color: var(--accent); text-shadow: 0 0 18px rgba(255, 210, 63, .45); }
-  .tag { color: var(--muted); margin: 0 0 32px; }
-  .card { background: var(--panel); border: 1px solid rgba(255,255,255,.12); border-radius: 12px; padding: 20px 22px; }
-  .card h2 { margin: 0 0 6px; font-size: 1.25rem; }
-  .card p { margin: 0 0 14px; color: var(--muted); }
-  .links a { display: inline-block; margin: 0 16px 8px 0; color: var(--accent); text-decoration: none; font-weight: 600; }
-  .links a:hover { text-decoration: underline; }
-  footer { margin-top: 40px; color: var(--muted); font-size: .85rem; }
-  footer a { color: var(--muted); }
-</style>
+<meta name="description" content="Vegxa Gaming is an independent mobile game studio. Our game Electrify: Power the City is a cable-laying puzzle set on the maps of 30 real cities.">
+<meta property="og:title" content="Electrify: Power the City – Vegxa Gaming">
+<meta property="og:description" content="Run cables, place transformers and keep 30 real cities lit.">
+<meta property="og:image" content="https://vegxa.com/assets/electrify-banner.jpg">
+<link rel="icon" href="/assets/electrify-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/lang.js"></script>
 </head>
 <body>
-<main>
-  <div class="brand">VEGXA GAMING</div>
-  <h1>⚡ <span>ELECTRIFY</span></h1>
-  <p class="tag">Power the City</p>
 
-  <div class="card">
-    <h2>Electrify: Power the City</h2>
-    <p>A relaxing yet clever electricity puzzle game. Connect transformers, power poles and buildings across 30 real cities — from Istanbul to Buenos Aires — and light up the night.</p>
-    <p>Gerçek şehir haritalarında trafo, direk ve binalar arasına kablo çekip 30 şehri aydınlattığın bir elektrik bulmaca oyunu.</p>
-    <div class="links">
-      <a href="/privacy/">Privacy Policy / Gizlilik Politikası</a>
-      <a href="/terms/">Terms of Service / Kullanım Koşulları</a>
-      <a href="mailto:developer@vegxa.com">Contact / İletişim</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="/">VEGXA<small>GAMING</small></a>
+    <nav>
+      <a class="hide-s" href="#electrify">Electrify</a>
+      <a class="hide-s" href="#studio"><span lang="en">Studio</span><span lang="tr">Stüdyo</span></a>
+      <a href="mailto:developer@vegxa.com"><span lang="en">Contact</span><span lang="tr">İletişim</span></a>
+      <div class="langs"><button data-set="en">EN</button><button data-set="tr">TR</button></div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="game" id="electrify">
+    <div class="wrap">
+      <div>
+        <p class="kicker"><span lang="en">Coming soon to Android</span><span lang="tr">Yakında Android'de</span></p>
+        <h1>Electrify:<span>Power the City</span></h1>
+        <p lang="en">A puzzle game about wiring up a city. New buildings show up every day and each one needs power. You have a limited amount of cable and your transformers can only take so much load. Leave a building in the dark too long and you lose the level.</p>
+        <p lang="tr">Bir şehrin elektriğini bağladığın bir bulmaca oyunu. Her gün yeni binalar çıkıyor ve hepsi elektrik istiyor. Kablon sınırlı, trafoların da ancak belli sayıda binayı besleyebiliyor. Bir binayı çok uzun süre karanlıkta bırakırsan bölümü kaybedersin.</p>
+        <ul class="facts">
+          <li lang="en">30 cities</li><li lang="tr">30 şehir</li>
+          <li lang="en">Plays offline</li><li lang="tr">İnternetsiz oynanır</li>
+          <li lang="en">10 languages</li><li lang="tr">10 dil</li>
+          <li lang="en">Free</li><li lang="tr">Ücretsiz</li>
+        </ul>
+        <span class="store">
+          <img src="/assets/electrify-icon.png" alt="">
+          <span><i lang="en">Coming soon on</i><i lang="tr">Yakında</i><b>Google Play</b></span>
+        </span>
+      </div>
+      <div class="device">
+        <img src="/assets/electrify-shot-1.jpg" width="1400" height="645" alt="Electrify gameplay: Istanbul map with the Golden Horn, bridges, a house and a transformer">
+      </div>
     </div>
   </div>
 
-  <footer>© 2026 Vegxa Gaming · <a href="mailto:developer@vegxa.com">developer@vegxa.com</a></footer>
+  <section class="block">
+    <div class="wrap">
+      <h2 lang="en">How a level works</h2>
+      <h2 lang="tr">Bir bölüm nasıl oynanır</h2>
+      <div class="steps">
+        <div>
+          <h3 lang="en">Run the cables</h3><h3 lang="tr">Kabloyu çek</h3>
+          <p lang="en">Drag a cable from a transformer to a building. Long gaps need power poles in between, and every metre comes out of your cable budget.</p>
+          <p lang="tr">Trafodan binaya kablo çek. Uzak binalar için araya direk koy. Harcadığın her metre kablo bütçenden düşer.</p>
+        </div>
+        <div>
+          <h3 lang="en">Pick a card</h3><h3 lang="tr">Kart seç</h3>
+          <p lang="en">At the end of each day you choose one of two cards: more cable, extra poles, longer reach, more capacity or a new transformer.</p>
+          <p lang="tr">Her günün sonunda iki karttan birini seçersin: ek kablo, ek direk, daha uzun kablo, daha fazla kapasite ya da yeni bir trafo.</p>
+        </div>
+        <div>
+          <h3 lang="en">Keep the lights on</h3><h3 lang="tr">Işıkları açık tut</h3>
+          <p lang="en">Survive the last day to clear the city. Finish without close calls and with cable to spare to earn all three stars.</p>
+          <p lang="tr">Son günü de atlatınca şehir tamamdır. Hiçbir binayı tehlikeye atmadan ve kablo artırarak bitirirsen üç yıldızı alırsın.</p>
+        </div>
+      </div>
+      <div class="wide">
+        <img src="/assets/electrify-shot-2.jpg" width="1400" height="645" alt="Istanbul map in Electrify with ferries crossing the Bosphorus" loading="lazy">
+      </div>
+      <p class="caption" lang="en">Istanbul, the first city. Tap the ferries, cars and birds while you think.</p>
+      <p class="caption" lang="tr">İlk şehir İstanbul. Düşünürken vapurlara, arabalara ve kuşlara dokunabilirsin.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <h2 lang="en">The cities</h2>
+      <h2 lang="tr">Şehirler</h2>
+      <ol class="cities">
+        <li><span>01</span>Istanbul</li><li><span>02</span>Paris</li><li><span>03</span>London</li><li><span>04</span>Rome</li>
+        <li><span>05</span>Amsterdam</li><li><span>06</span>Barcelona</li><li><span>07</span>Berlin</li><li><span>08</span>Vienna</li>
+        <li><span>09</span>Prague</li><li><span>10</span>Moscow</li><li><span>11</span>Cairo</li><li><span>12</span>Dubai</li>
+        <li><span>13</span>Athens</li><li><span>14</span>Mumbai</li><li><span>15</span>Bangkok</li><li><span>16</span>Singapore</li>
+        <li><span>17</span>Hong Kong</li><li><span>18</span>Shanghai</li><li><span>19</span>Beijing</li><li><span>20</span>Seoul</li>
+        <li><span>21</span>Tokyo</li><li><span>22</span>Sydney</li><li><span>23</span>San Francisco</li><li><span>24</span>Los Angeles</li>
+        <li><span>25</span>Chicago</li><li><span>26</span>Toronto</li><li><span>27</span>New York</li><li><span>28</span>Mexico City</li>
+        <li><span>29</span>Rio de Janeiro</li><li><span>30</span>Buenos Aires</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="studio">
+    <div class="wrap studio">
+      <div>
+        <h2 lang="en">About Vegxa Gaming</h2>
+        <h2 lang="tr">Vegxa Gaming hakkında</h2>
+        <p lang="en">We are an independent studio making small mobile games that are easy to pick up and pleasant to look at. Electrify: Power the City is out soon on Google Play.</p>
+        <p lang="tr">Kolay başlanan, bakması keyifli küçük mobil oyunlar yapan bağımsız bir stüdyoyuz. Electrify: Power the City yakında Google Play'de.</p>
+        <p lang="en">The game is free. Ads only appear between levels, never while you play, and a one-time purchase removes them.</p>
+        <p lang="tr">Oyun ücretsiz. Reklamlar oynarken değil, yalnızca bölüm aralarında çıkıyor. Tek seferlik bir satın alımla kapatılabiliyor.</p>
+      </div>
+      <div>
+        <h2 lang="en">Get in touch</h2>
+        <h2 lang="tr">Bize yaz</h2>
+        <p lang="en">Bug reports, questions about your data or just a hello:</p>
+        <p lang="tr">Hata bildirimi, verilerinle ilgili sorular ya da sadece merhaba demek için:</p>
+        <p><a class="mail" href="mailto:developer@vegxa.com">developer@vegxa.com</a></p>
+      </div>
+    </div>
+  </section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Vegxa Gaming</span>
+    <a href="/privacy/"><span lang="en">Privacy Policy</span><span lang="tr">Gizlilik Politikası</span></a>
+    <a href="/terms/"><span lang="en">Terms of Service</span><span lang="tr">Kullanım Koşulları</span></a>
+    <a class="right" href="mailto:developer@vegxa.com">developer@vegxa.com</a>
+  </div>
+</footer>
+
 </body>
 </html>
